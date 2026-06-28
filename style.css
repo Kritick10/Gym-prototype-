@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(10,10,10,0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.join {
+  background: #00ff88;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.hero-buttons button {
+  margin: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-buttons button:first-child {
+  background: #00ff88;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.dark {
+  background: #111;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* CARDS */
+.card {
+  background: #1b1b1b;
+  padding: 25px;
+  border-radius: 15px;
+  width: 260px;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00ff88;
+}
+
+.glow:hover {
+  box-shadow: 0 0 25px #00ff8855;
+}
+
+.pricing {
+  position: relative;
+}
+
+.premium {
+  border: 1px solid #00ff88;
+}
+
+.premium span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #00ff88;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* CTA */
+.cta {
+  margin-top: 50px;
+}
+
+.cta button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #00ff88;
+  border: none;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  header {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
